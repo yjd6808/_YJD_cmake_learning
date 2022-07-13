@@ -5,7 +5,7 @@
 
 
 void BM_call(benchmark::State& state) {
-
+    
     for (auto _ : state) {
         Point p1{1, 2};
         Point p2{3, 4};
@@ -14,6 +14,7 @@ void BM_call(benchmark::State& state) {
         std::cout << "Hello World\n";
         std::cout << p3.x << " " << p3.y << "\n";
     }
+    
 }
 
 BENCHMARK(BM_call);
